@@ -1,0 +1,250 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.team-directory-page {
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0px 4em;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #84a3f6;
+}
+
+.body {
+  min-height: 90vh;
+  background-color: #f9f9fb;
+}
+
+.page-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.search-box {
+  height: 38px;
+  width: 320px;
+  border-radius: 52px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.search-box-icon {
+  height: 100%;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.search-box-text {
+  padding: 0px 18px 0px 6px;
+  height: 100%;
+  width: 88%;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.search-input::placeholder {
+  color: #acacac;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.cmp {
+  padding: 1em 4em;
+}
+
+.cmp-head {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cmp-head-title {
+  color: #868ba2;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.cmp-body {
+  padding: 10px 0px;
+}
+
+.card-custom {
+  background-color: #ffffff;
+  height: 82px;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgb(220 220 220 / 20%) 0px 2px 8px 0px;
+}
+
+.card-custom:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #f9f9fb;
+}
+
+.card-custom .img-box {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-custom .text-box {
+  padding: 0px 8px;
+  height: 100%;
+  width: 78%;
+  display: flex;
+  align-items: center;
+}
+
+.card-img-box {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.card-img {
+  height: 56px;
+  width: 56px;
+}
+
+.name {
+  color: #535353;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.email {
+  color: #acacac;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.addBtn {
+  all: unset;
+  background-color: #84a3f6;
+  height: 76px;
+  width: 76px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  top: 84%;
+  right: 4.5%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addBtn {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.divider-box {
+  padding: 1em 4em 0.1em 4em;
+}
+
+hr {
+  color: #868ba2;
+}
+
+.loading-box {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #84a3f6;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+  25% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
+  }
+  50% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
+  }
+  75% {
+    box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+  100% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+}
